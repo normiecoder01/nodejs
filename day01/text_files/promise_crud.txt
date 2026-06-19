@@ -1,0 +1,1 @@
+This is the intial text being written using the fs.promises.writefile()
