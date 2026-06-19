@@ -1,0 +1,2 @@
+This is the intial text in the file written using writeFileSync().
+This is the later appended text using appendFileSync()
