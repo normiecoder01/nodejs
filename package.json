@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "http": "nodemon ./day02/http_module.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/normiecoder01/nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/normiecoder01/nodejs/issues"
+  },
+  "homepage": "https://github.com/normiecoder01/nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
