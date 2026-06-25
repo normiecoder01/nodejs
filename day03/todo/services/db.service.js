@@ -6,4 +6,4 @@ const fetchAllTasks = async () => {
     return await db.collection('tasks').find({}).toArray();
 }
 
-module.export = fetchAllTasks
+module.exports = fetchAllTasks

@@ -1,6 +1,5 @@
 const express = require('express')
-//const {getAllTasks , getTaskById , createTask , deleteTask , updateTask} = require('./../controllers/task.controller')
-const getAllTasks = require('./../services/database.service')
+const {getAllTasks , getTaskById , createTask , deleteTask , updateTask} = require('./../controllers/task.controller')
 const router = express.Router()
 
 router.use(express.json());

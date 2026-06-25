@@ -8,7 +8,7 @@ let clientInstance = null
 const connectDb = async () =>{
     if(dbInstance) return dbInstance;
     try{
-        clientInstance = MongoClient(url,{
+        clientInstance = new MongoClient(url,{
             maxPoolSize : 50,
             minPoolSize : 10,
             connectTimeoutMS : 5000,

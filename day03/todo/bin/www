@@ -25,10 +25,14 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-await connectDb();
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+connectDb().then(() => {
+  server.listen(port);
+  server.on('error', onError);
+  server.on('listening', onListening);
+}).catch(err => {
+  console.error("Database connection failed:", err);
+  process.exit(1);
+});
 
 /**
  * Normalize a port into a number, string, or false.
