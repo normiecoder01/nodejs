@@ -1,16 +1,23 @@
 const data = require('./../data/tasks.json')
 const { readTasks, writeTasks } = require('./../services/fileWriting.service')
+const { fetchAllTasks } = require('./../utils/db.util')
+// const getAllTasks = async (req, res, next) => {
+//     try {
+//         const stringTasks = await readTasks()
+//         const jsonTasks = JSON.parse(stringTasks)
+//         data.tasks = jsonTasks.tasks
+//         res.send(data.tasks)
+//     } catch (err) {
+//         next(err)
+//     }
+// }
 
-const getAllTasks = async (req, res, next) => {
-    try {
-        const stringTasks = await readTasks()
-        const jsonTasks = JSON.parse(stringTasks)
-        data.tasks = jsonTasks.tasks
-        res.send(data.tasks)
-    } catch (err) {
-        next(err)
-    }
-}
+// const getAllTasks = async (req , res , next) =>{
+//     try{
+//         const 
+
+//     }
+// }
 
 const getTaskById = async function(req, res, next) {
     try {
